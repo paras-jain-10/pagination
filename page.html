@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <p id="top">Assignment</p>
+
+    <div id="elementId"></div>
+    <div class="container" style="align-left: 50px">
+      <div id="wrapper">
+        <button class="first">first</button>
+        <button class="prev">prev</button>
+        <output id="pageNum" style="border: 1px solid black">1</output>
+        <button class="next">next</button>
+        <button class="last">last</button>
+        <select class="sel">
+          <option>3</option>
+          <option selected="select">5</option>
+          <option>10</option>
+        </select>
+      </div>
+    </div>
+
+    <script>
+      const students = [
+        { rollno: 001, name: "Paras", email: "pj849610@gmail.com" },
+        {
+          rollno: 002,
+          name: "Udit",
+          email: "UD849610@gmail.com",
+        },
+        {
+          rollno: 003,
+          name: "PQR",
+          email: "PQR849610@gmail.com",
+        },
+        {
+          rollno: 004,
+          name: "XYZ",
+          email: "XYZ849610@gmail.com",
+        },
+        {
+          rollno: 005,
+          name: "BNM",
+          email: "BNM849610@gmail.com",
+        },
+        {
+          rollno: 006,
+          name: "LKJ",
+          email: "LKJ849610@gmail.com",
+        },
+        {
+          rollno: 007,
+          name: "TYU",
+          email: "TYU849610@gmail.com",
+        },
+        {
+          rollno: "008",
+          name: "ZXC",
+          email: "ZXC849610@gmail.com",
+        },
+        {
+          rollno: "009",
+          name: "POI",
+          email: "POI849610@gmail.com",
+        },
+        {
+          rollno: 010,
+          name: "FGH",
+          email: "FGH849610@gmail.com",
+        },
+        {
+          rollno: 011,
+          name: "SDF",
+          email: "SDF849610@gmail.com",
+        },
+        {
+          rollno: 012,
+          name: "RTE",
+          email: "RTE849610@gmail.com",
+        },
+        {
+          rollno: 013,
+          name: "ASD",
+          email: "ASD849610@gmail.com",
+        },
+        {
+          rollno: 014,
+          name: "YUT",
+          email: "YUT849610@gmail.com",
+        },
+      ]; // array of objects
+
+      const listObj = new List(document.getElementById("elementId"), students);
+      console.log();
+      listObj.render();
+    </script>
+  </body>
+</html>
